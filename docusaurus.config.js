@@ -14,9 +14,9 @@ const config = {
 
   // Deployment
   url: 'https://yo-its-anas.github.io',
-  baseUrl: '/Phyiscal_AI_Humanoid_Robotics_Book/',
+  baseUrl: '/Physical_AI_Humanoid_Robotics_Book/',
   organizationName: 'yo-its-anas',
-  projectName: 'Phyiscal_AI_Humanoid_Robotics_Book',
+  projectName: 'Physical_AI_Humanoid_Robotics_Book',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
@@ -39,7 +39,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/yo-its-anas/Phyiscal_AI_Humanoid_Robotics_Book/tree/main/',
+          editUrl: 'https://github.com/yo-its-anas/Physical_AI_Humanoid_Robotics_Book/tree/main/',
           showLastUpdateTime: false,
           showLastUpdateAuthor: false,
         },
@@ -70,7 +70,7 @@ const config = {
             label: 'Textbook',
           },
           {
-            href: 'https://github.com/yo-its-anas/Phyiscal_AI_Humanoid_Robotics_Book',
+            href: 'https://github.com/yo-its-anas/Physical_AI_Humanoid_Robotics_Book',
             label: 'GitHub',
             position: 'right',
           },
@@ -120,7 +120,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/yo-its-anas/Phyiscal_AI_Humanoid_Robotics_Book',
+                href: 'https://github.com/yo-its-anas/Physical_AI_Humanoid_Robotics_Book',
               },
               {
                 label: 'Created with Claude Code',

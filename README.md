@@ -29,8 +29,8 @@ This textbook provides a complete curriculum covering foundational concepts, ROS
 
 ```bash
 # Clone the repository
-git clone https://github.com/anaslinux/ai_robotics_book.git
-cd ai_robotics_book
+git clone https://github.com/yo-its-anas/Physical_AI_Humanoid_Robotics_Book.git
+cd Physical_AI_Humanoid_Robotics_Book
 
 # Install dependencies
 npm install
@@ -116,4 +116,4 @@ For questions, issues, or suggestions, please open an issue on GitHub.
 
 ---
 
-**Course Website**: [https://anaslinux.github.io/ai_robotics_book/](https://anaslinux.github.io/ai_robotics_book/)
+**Course Website**: [https://yo-its-anas.github.io/Physical_AI_Humanoid_Robotics_Book/](https://yo-its-anas.github.io/Physical_AI_Humanoid_Robotics_Book/)
