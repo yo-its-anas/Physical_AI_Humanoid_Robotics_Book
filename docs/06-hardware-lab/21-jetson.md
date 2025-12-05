@@ -34,4 +34,4 @@ Configure hardware or evaluate platform options.
 ## Summary
 Proper hardware infrastructure enables efficient robot development and deployment.
 
-**Next**: [Chapter 22](./22-*.md)
+**Next**: [Chapter 22](./22-robot-options.md)

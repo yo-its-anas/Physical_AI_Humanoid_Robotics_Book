@@ -34,4 +34,4 @@ Configure hardware or evaluate platform options.
 ## Summary
 Proper hardware infrastructure enables efficient robot development and deployment.
 
-**Next**: [Chapter 23](./23-*.md)
+**Next**: [Chapter 23](./23-cloud-infra.md)

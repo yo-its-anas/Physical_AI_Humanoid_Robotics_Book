@@ -28,4 +28,4 @@ Generate synthetic datasets or implement navigation (depends on chapter).
 ## Summary
 Isaac Sim enables scalable robot learning and testing.
 
-**Next**: [Chapter 13](./13-*.md)
+**Next**: [Chapter 13](./13-perception.md)

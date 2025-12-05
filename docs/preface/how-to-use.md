@@ -132,7 +132,7 @@ When stuck:
 ```
 
 **3. Use Appendices**
-- [Appendix C: Troubleshooting](../08-appendix/c-troubleshooting.md) for common issues
+- [Appendix C: Troubleshooting](../08-appendix/c-troubleshooting-guide.md) for common issues
 - [Appendix A: ROS 2 Cheat Sheet](../08-appendix/a-ros2-cheatsheet.md) for commands
 
 **4. Debug Systematically**

@@ -38,4 +38,4 @@ Create Gazebo world, spawn robot, test basic behaviors.
 ## Summary
 Simulation accelerates development while reducing hardware risks.
 
-**Next**: [Chapter 10](./10-*.md)
+**Next**: [Chapter 10](./10-humanoid-sim.md)

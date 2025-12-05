@@ -52,4 +52,4 @@ Implement voice command recognition or LLM-based task planner.
 ## Summary
 VLA bridges natural language and robotic control, enabling intuitive human-robot interaction.
 
-**Next**: [Chapter 17](./17-*.md)
+**Next**: [Chapter 17](./17-voice-whisper.md)

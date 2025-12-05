@@ -40,4 +40,4 @@ Build and demonstrate full integrated system.
 ## Summary
 Capstone proves mastery of Physical AI development from concept to deployment.
 
-**Next**: [Chapter 26](./26-*.md)
+**Next**: [Chapter 26](./26-sim-to-real.md)
