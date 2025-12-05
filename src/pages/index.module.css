@@ -1,0 +1,44 @@
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.courseStructure {
+  padding: 3rem 0;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.courseStructure h2 {
+  font-size: 2.5rem;
+}
+
+.courseStructure h3 {
+  margin-top: 1rem;
+  color: var(--ifm-color-primary);
+}
+
+.courseStructure ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.courseStructure ul li {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+}
