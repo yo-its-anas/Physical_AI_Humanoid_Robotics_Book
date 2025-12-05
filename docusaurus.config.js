@@ -18,7 +18,7 @@ const config = {
   organizationName: 'yo-its-anas',
   projectName: 'Physical_AI_Humanoid_Robotics_Book',
   deploymentBranch: 'gh-pages',
-  trailingSlash: false,
+  trailingSlash: true,
 
   // Build Configuration
   onBrokenLinks: 'warn',
