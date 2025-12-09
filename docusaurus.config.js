@@ -51,6 +51,10 @@ const config = {
     ],
   ],
 
+  stylesheets: [
+    '/ragchat.css',
+  ],
+
   // Theme Configuration
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

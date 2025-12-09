@@ -28,3 +28,20 @@ lerna-debug.log*
 .env.local
 .env.production.local
 .env.test.local
+
+# Python (for /rag backend)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/

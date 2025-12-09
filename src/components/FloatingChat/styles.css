@@ -1,0 +1,245 @@
+/**
+ * Floating Chat Styles
+ *
+ * Styles for the floating button and sliding sidebar.
+ * Mobile-first, responsive design.
+ */
+
+/* ============================================
+   FLOATING BUTTON
+   ============================================ */
+
+.floating-chat-button {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.floating-chat-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.floating-chat-button:active {
+  transform: scale(0.95);
+}
+
+.floating-chat-button.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+}
+
+/* Button icon */
+.floating-chat-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ============================================
+   BACKDROP OVERLAY
+   ============================================ */
+
+.floating-chat-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   SIDEBAR
+   ============================================ */
+
+.floating-chat-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.floating-chat-sidebar.open {
+  transform: translateX(0);
+}
+
+/* Dark mode support */
+[data-theme='dark'] .floating-chat-sidebar {
+  background: #1b1b1d;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================
+   SIDEBAR HEADER
+   ============================================ */
+
+.floating-chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  flex-shrink: 0;
+}
+
+[data-theme='dark'] .floating-chat-header {
+  border-bottom-color: #2d2d30;
+}
+
+.floating-chat-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Close button */
+.floating-chat-close {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.floating-chat-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.floating-chat-close:active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ============================================
+   CHAT CONTENT AREA
+   ============================================ */
+
+.floating-chat-content {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure RagChat fills the content area */
+.floating-chat-content > div {
+  height: 100%;
+  width: 100%;
+}
+
+/* ============================================
+   MOBILE RESPONSIVE
+   ============================================ */
+
+/* Mobile: Full screen sidebar */
+@media (max-width: 768px) {
+  .floating-chat-sidebar {
+    max-width: 100%;
+  }
+
+  .floating-chat-button {
+    bottom: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .floating-chat-header h3 {
+    font-size: 16px;
+  }
+}
+
+/* Small mobile: Smaller button */
+@media (max-width: 480px) {
+  .floating-chat-button {
+    bottom: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .floating-chat-button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .floating-chat-header {
+    padding: 12px 16px;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+/* Focus styles for keyboard navigation */
+.floating-chat-button:focus-visible,
+.floating-chat-close:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .floating-chat-button,
+  .floating-chat-sidebar,
+  .floating-chat-backdrop {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+/* Hide floating chat when printing */
+@media print {
+  .floating-chat-button,
+  .floating-chat-sidebar,
+  .floating-chat-backdrop {
+    display: none !important;
+  }
+}
