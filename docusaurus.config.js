@@ -14,7 +14,7 @@ const config = {
 
   // Deployment
   url: 'https://yo-its-anas.github.io',
-  baseUrl: '/Physical_AI_Humanoid_Robotics_Book/',
+  baseUrl: '/',
   organizationName: 'yo-its-anas',
   projectName: 'Physical_AI_Humanoid_Robotics_Book',
   deploymentBranch: 'gh-pages',
