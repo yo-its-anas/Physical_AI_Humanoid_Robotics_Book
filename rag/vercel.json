@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "rag_server.py",
+      "src": "rag/rag_server.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "rag_server.py"
+      "dest": "rag/rag_server.py"
     }
   ]
 }
