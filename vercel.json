@@ -1,20 +1,19 @@
 {
   "version": 2,
-
   "builds": [
     {
       "src": "rag/rag_server.py",
       "use": "@vercel/python"
     },
     {
-      "src": "docusaurus.config.js",
+      "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "build"
+        "distDir": "build",
+        "buildCommand": "npm install && npm run build"
       }
     }
   ],
-
   "routes": [
     {
       "src": "/api/(.*)",
